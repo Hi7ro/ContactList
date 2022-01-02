@@ -13,7 +13,6 @@ function render() {
     <button onclick="addContact()">add</button>
   </div> 
   `;
-
   for (let i = 0; i < names.length; i++) {
     content.innerHTML += `
     <div class="card-box">
@@ -55,8 +54,8 @@ function save() {
 }
 
 function load() {
-  let namesAsText = localStorage.getItem('name', namesAsText);
-  let phoneAsText = localStorage.getItem('tel', phoneAsText);
+  let namesAsText = localStorage.getItem('name');
+  let phoneAsText = localStorage.getItem('tel');
 
   if (namesAsText && phoneAsText) {
     names = JSON.parse(namesAsText);
