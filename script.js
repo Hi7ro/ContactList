@@ -42,7 +42,6 @@ function remove(i) {
   phoneNumbers.splice(i, 1);
   render();
   save();
-
 }
 
 function save() {
